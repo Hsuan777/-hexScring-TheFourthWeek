@@ -1,0 +1,76 @@
+.logo {
+  @include hidden-text(80px, 49px, url("../images/logo-new_工作區域 1.png"));
+  @include media-breakpoint-sm {
+    width: 48px;
+    height: 30px;
+    background-size: 48px 30px;
+  }
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 88px;
+    @include media-breakpoint-md {
+      padding: 30px 48px;
+    }
+    @include media-breakpoint-sm {
+      padding: 10px 0px;
+      justify-content: center;
+      position: relative;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      width: 512px;
+      @include media-breakpoint-md {
+        width: 440px;
+      }
+      @include media-breakpoint-sm {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+        top: 100%;
+        left: 0;
+        transition: all 0.3s;
+        z-index: 99;
+      }
+      &.active {
+        max-height: 248px;
+      }
+    }
+    &__link {
+      color: white;
+      display: inline-block;
+      @include media-breakpoint-sm {
+        background-color: map-get($color, secondary);
+        padding: 16px 0;
+        width: 100%;
+        text-align: center;
+        border: 1px solid white;
+        &:hover {
+          background-color: #8f0400;
+        }
+      }
+    }
+    &__toggler {
+      display: none;
+      width: 24px;
+      height: 24px;
+      padding: 2px;
+      margin: 0;
+      border: 0;
+      color: white;
+      background-color: transparent;
+      @include media-breakpoint-sm {
+        display: block;
+        position: absolute;
+        left: 16px;
+      }
+    }
+  }

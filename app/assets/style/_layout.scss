@@ -1,0 +1,52 @@
+.footer {
+    .container{
+      padding: 0 48px;
+    }
+    font-weight: normal;
+    padding-bottom: 24px;
+    .navbar {
+      justify-content: space-between;
+      padding: 32px 0;
+      &__list {
+        width: 486px;
+      }
+      
+    }
+    @include media-breakpoint-sm {
+      .navbar {
+        align-items: start;
+        padding: 24px 0;
+      }
+      .copyright {
+        display: block;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          width: 48px;
+          height: 28px;
+          background-image: url("../images/logo-new_工作區域 1@2x.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          right: 0;
+          bottom: 0;
+        }
+        @include media-breakpoint-sm{
+          font-size: 14px;
+        }
+      }
+    }
+    .icon{
+      width: 48px;
+      height: 48px;
+      @include media-breakpoint-md{
+        width: 32px;
+        height: 32px;
+      }
+      @include media-breakpoint-sm{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  

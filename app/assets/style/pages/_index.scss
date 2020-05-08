@@ -1,0 +1,496 @@
+
+
+.custom__bg {
+  background-image: url("../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png");
+  background-size: cover;
+}
+
+.section {
+  /* 區塊基礎設定 */
+  padding: 64px 0px 80px 0px;
+  @include media-breakpoint-md {
+    padding: 40px 0;
+  }
+  @include media-breakpoint-sm {
+    padding: 24px 0;
+  }
+  
+  &__title {
+    margin-bottom: 3.75rem;
+  }
+
+  /* 專業服務 */
+  &__service {
+    @include media-breakpoint-sm {
+      padding-bottom: 56px;
+    }
+    .inner {
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 37px;
+        @include media-breakpoint-lg {
+          padding: 0 50px;
+        }
+        @include media-breakpoint-sm {
+          padding: 0 64px;
+        }
+      }
+      &__img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+        @include media-breakpoint-lg {
+          margin-bottom: 20px;
+        }
+        @include media-breakpoint-sm {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  /* 經典鏡框 */
+  &__classic {
+    .inner {
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media-breakpoint-sm {
+          justify-content: center;
+          height: 134px;
+          color: white;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        &:nth-child(1) {
+          @include media-breakpoint-sm {
+            background-image: url("../images/8.png");
+          }
+        }
+        &:nth-child(2) {
+          flex-direction: row-reverse;
+          .inner__img{
+            filter: grayscale(100%);
+            &:hover{
+              filter: grayscale(0%);
+            }
+          }
+          
+          .inner__text {
+            justify-content: flex-end;
+          }
+          @include media-breakpoint-md {
+            flex-direction: row;
+            .inner__text {
+              justify-content: center;
+            }
+          }
+          @include media-breakpoint-sm {
+            background-image: url("../images/15@2x.png");
+            filter: grayscale(100%);
+            &:hover{
+              filter: grayscale(0%);
+            }
+          }
+        }
+        &:nth-child(3) {
+          @include media-breakpoint-sm {
+            background-image: url("../images/28.png");
+          }
+        }
+      }
+      &__img {
+        width: 60%;
+        @include media-breakpoint-sm {
+          display: none;
+        }
+      }
+      &__text {
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        width: 40%;
+        @include media-breakpoint-lg {
+          width: 34%;
+          justify-content: center;
+          font-size: 28px;
+          line-height: 42px;
+        }
+      }
+      .icon {
+        @include media-breakpoint-sm {
+          background-color: white;
+        }
+      }
+    }
+  }
+
+  /* 聯名眼鏡 */
+  &__jointName {
+    background-image: url("../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png");
+    background-size: cover;
+    padding-bottom: 480px;
+    @include media-breakpoint-sm {
+      padding-bottom: 189px;
+    }
+    .inner {
+      &__mixed {
+        // 1540 -> 677 -> 333
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3.75rem;
+        @include media-breakpoint-sm {
+          margin-bottom: 30px;
+          .mb-1 {
+            margin-bottom: 2px;
+          }
+          .mr-1 {
+            margin-right: 2px;
+          }
+        }
+
+        > li {
+          // 左欄
+          &:first-child {
+            max-width: 37.2%;
+            @include media-breakpoint-sm {
+              max-width: 46.84%;
+            }
+          }
+          // 右欄
+          &:last-child {
+            max-width: 62.2%;
+            // @include media-breakpoint-lg{
+
+            // }
+            @include media-breakpoint-md {
+              max-width: 61.74%;
+              margin-bottom: 0;
+            }
+            @include media-breakpoint-sm {
+              max-width: 50%;
+            }
+          }
+        }
+
+        &__secondary {
+          > li {
+            // 眼鏡哥
+            &:first-child {
+              max-width: 13.77%;
+              @include media-breakpoint-sm {
+                max-width: 22%;
+              }
+            }
+            &:last-child {
+              max-width: 85.38%;
+              @include media-breakpoint-lg {
+                justify-content: start;
+              }
+              @include media-breakpoint-sm {
+                justify-content: center;
+                align-items: start;
+              }
+            }
+          }
+        }
+      }
+      // 黃眼鏡
+      &__more {
+        position: relative;
+        display: block;
+        margin-right: 150px;
+        max-width: 31.66%;
+        @include media-breakpoint-lg {
+          margin-right: 100px;
+        }
+        @include media-breakpoint-md {
+          margin-right: 80px;
+        }
+        @include media-breakpoint-sm {
+          align-items: start;
+          margin-right: 0px;
+          max-width: 62%;
+        }
+
+        &:hover {
+          .inner__more--imgHover {
+            transform: translateX(15px);
+          }
+          .inner__more--textHover {
+            &::before {
+              font-size: 64px;
+              opacity: 0.7;
+              transform: translateY(-60px);
+              @include media-breakpoint-lg {
+                font-size: 30px;
+                transform: translateY(-50px);
+              }
+              @include media-breakpoint-md {
+                font-size: 16px;
+                transform: translateY(-50px);
+              }
+            }
+            &::after {
+              font-size: 48px;
+              opacity: 0.4;
+              transform: translateY(-90px);
+              @include media-breakpoint-lg {
+                font-size: 20px;
+                transform: translateY(-80px);
+              }
+              @include media-breakpoint-md {
+                font-size: 8px;
+                transform: translateY(-50px);
+              }
+            }
+          }
+        }
+        // 白色區塊
+        &__secondary {
+          position: absolute;
+          top: 50%;
+          right: -84px;
+          transform: translateY(-50%);
+          @include media-breakpoint-lg {
+            right: -50px;
+          }
+          @include media-breakpoint-sm {
+            width: 124px;
+            right: 0px;
+            left: 10px;
+          }
+          @media (max-width: 374px) {
+            max-width: 100%;
+          }
+        }
+        &__text {
+          position: relative;
+          font-size: 72px;
+          line-height: 1.5;
+          padding: 0 19px 0 32px;
+          background-color: #fff;
+          @include media-breakpoint-lg {
+            font-size: 40px;
+            padding: 0 19px 0 19px;
+          }
+          @include media-breakpoint-md {
+            font-size: 26px;
+          }
+          @include media-breakpoint-sm {
+            padding: 0 12px 0 14px;
+          }
+          @media (max-width: 374px) {
+            padding: 0 6px 0 7px;
+            font-size: 16px;
+          }
+        }
+        &--textHover {
+          &::before,
+          &::after {
+            position: absolute;
+            content: "MORE";
+            font-size: 72px;
+            top: 0;
+            left: 32px;
+            transition: 0.3s;
+            z-index: 9;
+            @include media-breakpoint-lg {
+              font-size: 40px;
+              left: 19px;
+            }
+            @include media-breakpoint-md {
+              font-size: 26px;
+            }
+            @include media-breakpoint-sm {
+              left: 14px;
+            }
+            @media (max-width: 374px) {
+              font-size: 16px;
+              left: 6px;
+            }
+          }
+          &::after {
+            transition: 0.65s;
+          }
+        }
+        &--imgHover {
+          margin-left: 17px;
+          transition: 0.5s;
+          @include media-breakpoint-lg {
+            width: 27px;
+            height: 27px;
+            margin-left: 10px;
+          }
+          @include media-breakpoint-sm {
+            width: 18px;
+            height: 18px;
+          }
+          @media (max-width: 374px) {
+            width: 9px;
+            height: 9px;
+            margin-left: 5px;
+          }
+        }
+      }
+      &__brand {
+        &__item {
+          /* 若使用 df去做置中，圖片+文字會造成高度不正確 */
+          /* 而圖片會自動撐開高度 */
+          /* 所以讓文字以定位方式置中，就無需使用 flex*/
+          // max-width: 100%;
+          font-size: 72px;
+          line-height: 1.5;
+          position: relative;
+          &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: rgba(white, $alpha: 0.5);
+            z-index: 1;
+          }
+
+          &::after {
+            position: absolute;
+            content: "";
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+          }
+          &--first {
+            &::after {
+              background-image: url("../images/14.png");
+            }
+          }
+          &--secondary {
+            &::after {
+              background-image: url("../images/39.png");
+            }
+          }
+          @include media-breakpoint-md {
+            font-size: 48px;
+          }
+          @include media-breakpoint-sm {
+            font-size: 32px;
+            height: 284px;
+          }
+        }
+        &__text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          white-space: nowrap;
+          z-index: 9;
+        }
+      }
+    }
+  }
+  /* 顧客推薦 */
+  &__recommend {
+    margin-top: -400px;
+    @include media-breakpoint-sm {
+      margin-top: -189px;
+    }
+    // .inner {
+    //   &__list {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: wrap;
+    //     @include media-breakpoint-sm {
+    //       justify-content: center;
+    //     }
+    //   }
+    // }
+  }
+
+  /* 聯絡我們 */
+  &__contactUs {
+    padding-bottom: 92px;
+    @include media-breakpoint-md {
+      padding-bottom: 56px;
+    }
+    @include media-breakpoint-md {
+      padding-bottom: 48px;
+    }
+    .inner {
+      &__text {
+        margin-bottom: 20px;
+        @include media-breakpoint-md {
+          font-size: 16px;
+        }
+      }
+    }
+    .form {
+      &__group {
+        label {
+          display: block;
+          cursor: pointer;
+        }
+      }
+      &__input {
+        padding: 14px 16px;
+        border: 1px solid #000;
+        background-color: transparent;
+        &::placeholder {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+    }
+    .checkbox {
+      display: none;
+      &__label {
+        cursor: pointer;
+        &::before {
+          content: "\2714";
+          border: 1px solid #000;
+          border-radius: 10%;
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          padding: 1px 0px 2px 4px;
+          margin-right: 4px;
+          color: transparent;
+          @include media-breakpoint-sm {
+            width: 16px;
+            height: 16px;
+            padding: 1px 0px 1px 3px;
+          }
+        }
+      }
+
+      &:checked {
+        + .checkbox__label::before {
+          top: 0;
+          background-color: #aa0601;
+          color: white;
+        }
+      }
+    }
+    .btn {
+      margin-top: 42px;
+      padding: 16px 58px;
+      cursor: pointer;
+    }
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+    @include media-breakpoint-md {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+

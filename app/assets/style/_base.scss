@@ -1,0 +1,76 @@
+// 基礎標籤設定
+* {
+  box-sizing: border-box; 
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;      
+}
+// 瀏覽器可能會不一樣
+html{
+  font-size:  $body__font-size;
+}
+body{
+  margin: 0 auto;
+  font-size: $body__font-size;
+  background-color: $body__background-color;
+  color: $body__color;
+  font-family:  $body__font-family;
+  line-height: $body__line-height;
+  font-weight: bold;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+h1, .h1 {
+  font-size: 64px;
+}
+h2, .h2 {
+  font-size: 48px;  
+}
+h3, .h3 {
+  font-size: 36px;  
+}
+h4, .h4 {
+  font-size: 24px;  
+}
+h1, .h1,h2, .h2,h3, .h3,h4, .h4{
+  line-height: 1.5;
+  font-weight: bolder;
+}
+@include media-breakpoint-md{
+  h1, .h1{
+    font-size: 48px;
+  }
+  h2, .h2 {
+    font-size: 32px;  
+  }
+  h3, .h3, h4, .h4 {
+    font-size: 20px;  
+  }
+}
+
+
+
+@include media-breakpoint-sm{
+  h1, .h1{
+    font-size: 32px;
+  }
+  h2, .h2 {
+    font-size: 24px;  
+  }
+  h3, .h3, h4, .h4 {
+    font-size: 16px;  
+  }
+}
+
+hr{
+  margin: 0;
+}

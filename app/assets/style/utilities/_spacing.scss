@@ -1,0 +1,171 @@
+/* spacing */
+.px-3{
+  padding: 0 1.5rem ;
+}
+.px-0{
+  padding-right: 0 ;
+  padding-left: 0;
+}
+.py-3{
+  padding: 1.5rem 0 ;
+}
+.py-4{
+  padding: 2rem 0 ;
+}
+.mx-0{
+  margin-left: 0;
+  margin-right: 0;
+}
+.mx-auto {
+  margin: 0 auto ;
+}
+.my-auto {
+  margin: auto 0 ;
+}
+.mb-0{
+  margin-bottom: 0;
+}
+
+@for $i from 1 through 5{
+
+  .pt-#{$i}{
+    padding-top:0.5rem*$i ;
+  }
+  .pr-#{$i}{
+    padding-right:0.5rem*$i 
+  }
+  .pb-#{$i}{
+    padding-bottom:0.5rem*$i ;
+  }
+  .pl-#{$i}{
+    padding-left:0.5rem*$i;
+  }
+  .mt-#{$i}{
+    margin-top:0.5rem*$i;
+  }
+  .mr-#{$i}{
+    margin-right:0.5rem*$i;
+  }
+  .mb-#{$i}{
+    margin-bottom:0.5rem*$i 
+  }
+  .ml-#{$i}{
+    margin-left:0.5rem*$i ;
+  }
+}
+@include media-breakpoint-lg{
+  .mx-lg-0{
+    margin-left: 0 ;
+    margin-right: 0 ;
+  }
+  @for $i from 1 through 5{
+    .pt-lg-#{$i}{
+      padding-top:0.5rem*$i ;
+    }
+    .pr-lg-#{$i}{
+      padding-right:0.5rem*$i ;
+    }
+    .pb-lg-#{$i}{
+      padding-bottom:0.5rem*$i ;
+    }
+    .pl-lg-#{$i}{
+      padding-left:0.5rem*$i ;
+    }
+    .mt-lg-#{$i}{
+      margin-top:0.5rem*$i ;
+    }
+    .mr-lg-#{$i}{
+      margin-right:0.5rem*$i ;
+    }
+    .mb-lg-#{$i}{
+      margin-bottom:0.5rem*$i ;
+    }
+    .ml-lg-#{$i}{
+      margin-left:0.5rem*$i ;
+    }
+  }
+  
+}
+
+@include media-breakpoint-md{
+  .px-md-0{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mx-md-0{
+    margin-left: 0 ;
+    margin-right: 0 ;
+  }
+  
+  @for $i from 1 through 5{
+    .pt-md-#{$i}{
+      padding-top:0.5rem*$i ;
+    }
+    .pr-md-#{$i}{
+      padding-right:0.5rem*$i ;
+    }
+    .pb-md-#{$i}{
+      padding-bottom:0.5rem*$i ;
+    }
+    .pl-md-#{$i}{
+      padding-left:0.5rem*$i ;
+    }
+    .mt-md-#{$i}{
+      margin-top:0.5rem*$i ;
+    }
+    .mr-md-#{$i}{
+      margin-right:0.5rem*$i ;
+    }
+    .mb-md-#{$i}{
+      margin-bottom:0.5rem*$i ;
+    }
+    .ml-md-#{$i}{
+      margin-left:0.5rem*$i ;
+    }
+  }
+  
+}
+@include media-breakpoint-sm{
+  .py-sm-3{
+    padding:0 1.5rem ;
+  }
+  .px-sm-0{
+    padding-right:0 ;
+    padding-left:0 ;
+  }
+  .mx-sm-0{
+    margin-left: 0 ;
+    margin-right: 0 ;
+  }
+  .mb-sm-0{
+    margin-bottom: 0;
+  }
+  @for $i from 1 through 5{
+    .pt-sm-#{$i}{
+      padding-top:0.5rem*$i ;
+    }
+    .pr-sm-#{$i}{
+      padding-right:0.5rem*$i ;
+    }
+    .pb-sm-#{$i}{
+      padding-bottom:0.5rem*$i ;
+    }
+    .pl-sm-#{$i}{
+      padding-left:0.5rem*$i ;
+    }
+    .mt-sm-#{$i}{
+      margin-top:0.5rem*$i ;
+    }
+    .mr-sm-#{$i}{
+      margin-right:0.5rem*$i ;
+    }
+    .mb-sm-#{$i}{
+      margin-bottom:0.5rem*$i ;
+    }
+    .ml-sm-#{$i}{
+      margin-left:0.5rem*$i ;
+    }
+  }
+  
+}
+
