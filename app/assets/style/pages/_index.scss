@@ -481,6 +481,10 @@
     .btn {
       margin-top: 42px;
       padding: 16px 58px;
+      &:hover{
+        color: map-get($color, secondary);        
+        background-color: map-get($color, white);
+      }
       cursor: pointer;
     }
   }

@@ -10,12 +10,16 @@
       &__list {
         width: 486px;
       }
+      &__link{
+        padding: 12px 15px;
+      }
       
     }
     @include media-breakpoint-sm {
       .navbar {
         align-items: start;
         padding: 24px 0;
+        
       }
       .copyright {
         display: block;

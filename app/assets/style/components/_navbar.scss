@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 88px;
+    padding: 0px 88px;
     @include media-breakpoint-md {
       padding: 30px 48px;
     }
@@ -47,6 +47,11 @@
     &__link {
       color: white;
       display: inline-block;
+      padding: 30px ;
+      &:hover{
+        color: map-get($color, secondary);        
+        background-color: map-get($color, white);
+      }
       @include media-breakpoint-sm {
         background-color: map-get($color, secondary);
         padding: 16px 0;
